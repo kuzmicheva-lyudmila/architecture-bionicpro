@@ -1,2 +1,12 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+.flattened-pom.xml
+*/target/
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
 /postgres-keycloak-data
 2024__yandex-architecture-sso.code-workspace
