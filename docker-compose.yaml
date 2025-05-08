@@ -48,6 +48,7 @@ services:
       - "8000:8000"
     environment:
       SPRING_PROFILES_ACTIVE: prod
+      SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_ISSUER_URI: http://keycloak:8080/realms/reports-realm  # Используем IP для Keycloak
     depends_on:
       - keycloak_db
       - keycloak
