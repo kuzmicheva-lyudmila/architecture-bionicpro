@@ -56,8 +56,7 @@ public class JwtConverter {
                 .withJwkSetUri("http://keycloak:8080/realms/reports-realm/protocol/openid-connect/certs")
                 .build();
 
-        // Удаляем ВСЕ стандартные валидации
-        jwtDecoder.setJwtValidator(JwtValidators.createDefault()); // Без проверки issuer
+        jwtDecoder.setJwtValidator(JwtValidators.createDefault());
 
         return jwtDecoder;
     }
